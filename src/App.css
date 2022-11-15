@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body{
+  font-family: 'Red Rose', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  color: #434343;
+}
+
+/* NAVBAR STYLES */
+nav, .card-wrapper{
+  width: 86.111%;
+}
+
+nav{
+  margin: 43px auto 0;
+  justify-content: space-between;
+}
+
+.mobile-menu{
+  display:none;
+}
+
+nav, .nav-links{
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo{
+  width: 18.79%;
+}
+
+.nav-logo img, .ft-logo{
+ width: 100%;
+  /* width: 233px; */
+}
+
+.nav-links a{
+  color: #434343;
+  padding-right: 48px;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+button, #connect__wallet{
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  font-family: 'Red Rose', cursive;
+}
+
+#connect__wallet{
+  border-radius: 10px;
+  padding: 15px 27px;
+}
+
+#connect__wallet, .search_box button{
+  color: white;
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+}
+
+/* _________________ NAV  END _________________________*/
+
+/* HERO SECTION */
+
+.hero{
+  width: 84.792%;
+  padding:125px 0 67px 0;
+  margin: 0 auto;
+}
+
+.market-brands, .hero{
+  display: flex;
+  align-items: center;
+}
+
+.hero-text{
+  width: 52.907%;
+}
+
+.hero-text h1{
+  font-size: 56px;
+  letter-spacing: -0.02em;
+}
+
+.hero-text h1 span{
+  font-weight: 700;
+  color: #a02279;
+}
+
+.hero-text p{
+  font-size: 24px;
+  padding: 48px 0;
+  line-height: 35px;
+  width: 636px;
+}
+
+.search_box{
+  display: flex;
+  width: 95.49%;
+}
+
+.search_box ::placeholder{
+  color: #b8b8b8;
+  font-size: 14px;
+  font-family: 'Red Rose', cursive;
+}
+
+.search_box input{
+  padding: 18.92px 0 20.08px 15px;
+  outline: none;
+  border: 1px solid #a3a3a3;
+  border-radius: 8px 0px 0px 8px;
+  width: 62.78%;
+}
+
+.search_box button{
+  border-radius: 0px 8px 8px 0px;
+  padding: 17px 87px;
+  margin-left: 0.08px;
+}
+
+.hero_imgs{
+  display: grid;
+  grid-template-areas: 
+  '. b'
+  'a b'
+  'a d'
+  'c d'
+  'c .';
+  gap: 8px;
+  width: 476px;
+  margin-left: 99px;
+}
+
+.h1{
+  grid-area: a;
+}
+
+.h2{
+  grid-area: b;
+}
+
+.h3{
+  grid-area: c;
+}
+
+.h4{
+  grid-area: d;
+}
+
+.market-brands{
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  padding: 10px 9.6368%;
+  justify-content: space-between;
+  /* width:80.726%; */
+}
+
+/* _________________ HERO  END _________________________*/
+.inspiration h2{
+  color: #000;
+  font-weight: 700;
+  font-size: 48px;
+  margin: 39px 0 43px;
+  text-align: center;
+}
+
+.card-description, .distance{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-wrapper{
+  display: grid;
+  gap: 24px;
+  margin: 0 auto 53px;
+  grid-template-columns: auto auto auto auto;
+}
+
+.card{
+  border: solid 1px #d7d7d7;
+  border-radius: 15px;
+  background: linear-gradient(124.4deg, #fff 10.8%, #fff 87.34%);
+  font-size: 12px;
+  padding: 1rem;
+}
+
+.card-img{
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.card-img img{
+  width: inherit;
+}
+
+.card-description, .distance{
+  margin-bottom: 10px;
+}
+
+.card h6{
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.additional-info{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:86.1111%;
+}
+
+.fourth{
+  width:100%;
+  padding: 100px 0;
+  border: 1px solid #000;
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+}
+
+
+.nft-text{
+  color: #fff;
+  width: 33.4677%;
+}
+
+.nft-text h2{
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.nft-text p{
+  font-size: 18px;
+  padding-bottom: 57.55px;
+  line-height: 35px;
+}
+
+.nft-text #learn_more{
+  padding:14px 33px;
+  color: #a02278;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.nft-img{
+  width:56.774%;
+}
+
+/* FOOTER STYLES */
+
+footer{
+  background-color: #1d1d1e;
+  padding: 63px 0 0 113px;
+}
+
+.ft-wrapper{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 84.305%;
+}
+
+.socials img{
+  margin-right: 32px;
+  cursor: pointer;
+}
+
+.ft-logo{
+  padding-bottom: 96px;
+}
+
+.ft-links{
+  display: flex;
+  /* width: 698px; */
+  width: 57.496%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ft-links ul{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ft-links li{
+  margin: 16px 0;
+}
+
+.ft-links li a{
+  color: #f1f3f9;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.ft-links li a:hover{
+  font-weight: 700;
+}
+
+footer p{
+  color: #f7f7f7;
+  font-size: 16px;
+  padding-bottom: 37px;
+  margin-top: 35px;
+}
+
+/* _________________ FOOTER  END _________________________*/
+
+/* MODAL STYLES */
+.modal{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color: rgba(64, 64, 64, 0.3);
+}
+.modal-container{
+  width: 600px;
+  border-radius: 1rem;
+  background-color:#fff;
+}
+
+.modal-header, .wallet-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header{
+  border-bottom: 1px solid #cfd8dc;
+  padding: 24px 32px;
+}
+
+.modal-header h4{
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.modal-header a{
+  width: 24px;
+  height: 24px;
+  color: #1a1a1a;
+}
+
+.modal-header a, .wallet_link span{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-body{
+  padding: 32px;
+}
+
+.modal-body h6{
+  font-weight: 400;
+  font-size: 1rem;
+  color: #333;
+}
+
+.wallet-btn{
+  border: 1px solid #cfd8dc;
+  border-radius: 12px;
+  padding: 12px 24px 12px 20px;
+  background-color: transparent;
+  margin-top: 1rem;
+}
+
+.wallet-btn:first-of-type{
+  background-color: #f8f9fa;
+}
+
+.wallet_link{
+  display: flex;
+  align-items: center;
+}
+
+.wallet_link img{
+  width: 44px;
+  height: 44px;
+}
+
+.wallet_link span{
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 1rem;
+}
+
+.right-btn{
+  color: #959da6;
+}
+
+/* _________________________MODAL END ______________________________________ */
+
+/* FilterBy Buttons/Link */
+
+.cat-locat{
+  width: 81.736%;
+  padding-left: 6.94%;
+  margin: 115px 0 64px;
+}
+
+.cat-locat, .category, .location{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category{
+  width: 80.296%;
+}
+
+.category a{
+  font-size: 20px;
+  color: #434343;
+  padding: 2px;
+}
+
+.location span{
+  font-size: 1rem;
+}
+
+.location a{
+  width: 24px;
+  height: 24px;
+}
+
+.location{
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #b4b4b4;
+  width: 14.037%;
+}
+
+/*Tablet */
+
+@media (max-width: 769px){
+  header{
+    display:flex;
+    justify-content: space-between;
+    padding:0 1.5rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    width:30px;
+    height: 35px;
+
+  }
+
+  .bars{
+    height:3px;
+    margin-bottom: 2px;
+    width:20px;
+    background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  }
+
+  nav{
+    margin: 0;
+    flex-direction: column;
+    width: auto;
+  }
+
+  .nav-links, .hero{
+    flex-direction: column;
+  }
+
+  .nav-links{
+    align-self: center;
+  }
+
+  .nav-links a{
+    padding-right: 0;
+    padding:10px;
+  }
+
+  .market-brands{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .hero-text p{
+    padding: 30px 0;
+    font-size: 21px;
+  }
+
+  .hero-text h1{
+    font-size: 48px;
+  }
+
+  .inspiration h2, .nft-text h2{
+    font-size: 36px;
+  }
+
+  .nft-img{
+    margin-bottom: 25px;
+  }
+
+  .nft-text h2{
+    margin-bottom: 20px;
+  }
+
+  .hero{
+    padding-top: 25px;
+  }
+
+  .hero-text, .nft-text{
+    width: 100%;
+    text-align: center;
+  }
+
+  .search_box{
+    margin: 0 auto;
+  }
+
+  .nft-text p{
+   padding-bottom: 30px; 
+  }
+
+  .hero_imgs, .nft-img{
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .nft-img{
+    width: 75%;
+  }
+  
+  .additional-info{
+    flex-direction: column-reverse;
+    
+  }
+
+  .card-wrapper{
+    grid-template-columns: auto auto;
+  }
+  footer{
+    padding: 33px 1rem;
+  }
+
+  .ft-logo{
+    padding-bottom: 24px;
+    width: 60%;
+  }
+
+  .ft-wrapper, .ft-links{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ft-links{
+    align-items: flex-start;
+  }
+
+  .socials{
+    margin-bottom: 1.2rem;
+  }
+
+  .fourth{
+    padding: 35px 0px;
+  }
+
+  .market-brands img{
+    width: 150px;
+  }
+}
+/* ____________________ END OF TAB _________________________________ */
+
+/* Mobile */
+@media (max-width: 481px){
+  
+  .card-wrapper{
+    grid-template-columns: auto;
+  }
+
+  .additional-info{
+    padding: 24px 1rem;
+    width: 100%;
+  }
+
+  .nft-img, .nft-text{
+    width: 100%;
+  }
+  .inspiration h2, .nft-text h2{
+    font-size: 28px;
+  }
+
+  .hero-text h1{
+    font-size: 36px;
+  }
+
+  .hero-text p{
+    line-height: normal;
+  }
+
+  .market-brands{
+    padding: 1rem;
+  }
+
+  .search_box input{
+    padding: 15px;
+  }
+
+  .search_box button{
+    padding: 12px 40px;
+  }
+
+  .nft-text #learn_more{
+    padding: 13px 30px;
+  }
+
+  footer p, .ft-links ul{
+    font-size: 14px;
+  }
+
+  header, .card-wrapper{
+    width: 100%;
+    padding:0 1rem;
+  }
+
+  .mobile-menu{
+    display: block;
+  }
+
+}
