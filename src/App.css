@@ -32,7 +32,8 @@ nav, .card-wrapper{
 }
 
 nav{
-  margin: 2.6875rem auto 0;
+  margin: 0 auto ;
+  padding-top: 2.6875rem;
   justify-content: space-between;
 }
 
@@ -84,6 +85,11 @@ button, #connect__wallet{
 
 #hide-this{
   display: none;
+}
+
+.navbar-toggler{
+  padding: 0;
+  border: none;
 }
 
 /* _________________ NAV  END _________________________*/
@@ -188,7 +194,7 @@ button, #connect__wallet{
   color: #000;
   font-weight: 700;
   font-size: 3rem;
-  margin: 2.4375rem 0 2.6875rem;
+  padding: 2.4375rem 0 2.6875rem;
   text-align: center;
 }
 
