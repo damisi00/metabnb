@@ -14,6 +14,18 @@ body{
   color: #434343;
 }
 
+img, svg{
+  vertical-align: inherit;
+}
+
+ul{
+  margin-left:0;
+  padding-left: 0;
+}
+ p{
+   margin-bottom: 0;
+ }
+
 /* NAVBAR STYLES */
 nav, .card-wrapper{
   width: 86.111%;
@@ -24,7 +36,7 @@ nav{
   justify-content: space-between;
 }
 
-.mobile-menu{
+.mobile_menu{
   display:none;
 }
 
@@ -34,12 +46,13 @@ nav, .nav-links{
 }
 
 .nav-logo{
-  width: 18.79%;
+  /* width: 18.79%; */
+  width: 233px;
 }
 
 .nav-logo img, .ft-logo{
  width: 100%;
-  /* width: 233px; */
+  
 }
 
 .nav-links a{
@@ -184,6 +197,10 @@ button, #connect__wallet{
   justify-content: space-between;
 }
 
+.rating{
+  width: 100px;
+}
+
 .card-wrapper{
   display: grid;
   gap: 24px;
@@ -322,16 +339,26 @@ footer p{
 /* _________________ FOOTER  END _________________________*/
 
 /* MODAL STYLES */
-.modal{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.modal-backdrop{
+  
   background-color: rgba(64, 64, 64, 0.3);
 }
+
+div.fade.in.modal{
+  display:flex !important;
+}
+
+.modal-dialog{
+  margin: auto;
+}
+
 .modal-container{
-  width: 600px;
+  /* width: 600px; */
+  width: 100%;
   border-radius: 1rem;
-  background-color:#fff;
+  background-color:transparent;
+  border: none;
+  margin:auto !important;
 }
 
 .modal-header, .wallet-btn{
@@ -447,27 +474,39 @@ footer p{
 
 /*Tablet */
 
-@media (max-width: 769px){
-  header{
+@media (max-width: 991px){
+  .logo-menu{
     display:flex;
     justify-content: space-between;
-    padding:0 1.5rem;
-    width: 100%;
+    padding:1.5rem 1rem;
+    width: 85%;
     align-items: center;
   }
 
-  .mobile-menu{
+  .mobile_menu{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width:30px;
-    height: 35px;
+    height: 30px;
 
+  }
+
+  .category{
+    flex-wrap: wrap;
+  }
+
+  .bars:first-of-type, .bars:last-of-type{
+    width: 65%;
+  }
+
+  .bars:last-of-type{
+    align-self: flex-end;
   }
 
   .bars{
     height:3px;
-    margin-bottom: 2px;
-    width:20px;
+    width:35px;
     background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
   }
 
@@ -483,11 +522,18 @@ footer p{
 
   .nav-links{
     align-self: center;
+    display:none;
+  }
+
+  #connect__wallet{
+    display: none;
   }
 
   .nav-links a{
     padding-right: 0;
-    padding:10px;
+  }
+  .nav-links li{
+    margin-bottom: 1.2rem;
   }
 
   .market-brands{
@@ -497,14 +543,16 @@ footer p{
   .hero-text p{
     padding: 30px 0;
     font-size: 21px;
+    margin:auto;
   }
 
   .hero-text h1{
-    font-size: 48px;
+    font-size: 36px;
+    padding:0 1rem;
   }
 
   .inspiration h2, .nft-text h2{
-    font-size: 36px;
+    font-size: 28px;
   }
 
   .nft-img{
@@ -575,15 +623,31 @@ footer p{
     padding: 35px 0px;
   }
 
-  .market-brands img{
+  .market-brands img, .nav-logo{
     width: 150px;
+  }
+  .search_box input{
+    margin:auto;
+    padding: 15px;
+  }
+
+  .search_box button{
+    padding: 12px 70px;
+  }
+
+  .cat-locat{
+    width: 88%;
+    margin: 64px 0;
+    flex-direction: column;
   }
 }
 /* ____________________ END OF TAB _________________________________ */
 
 /* Mobile */
 @media (max-width: 481px){
-  
+  .logo-menu{
+    width: 100%;
+  }
   .card-wrapper{
     grid-template-columns: auto;
   }
@@ -599,13 +663,17 @@ footer p{
   .inspiration h2, .nft-text h2{
     font-size: 28px;
   }
-
+  .inspiration h2{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .hero-text h1{
-    font-size: 36px;
+    font-size: 28px;
   }
 
   .hero-text p{
     line-height: normal;
+    font-size: 18px;
   }
 
   .market-brands{
@@ -628,13 +696,54 @@ footer p{
     font-size: 14px;
   }
 
-  header, .card-wrapper{
+  nav, .card-wrapper{
     width: 100%;
     padding:0 1rem;
   }
 
-  .mobile-menu{
-    display: block;
+  button, #connect_wallet{
+    font-size: 0.8rem;
   }
 
+  .logo-menu{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cat-locat{
+    width: 85%;
+  }
+
+  .category{
+    justify-content: space-around;
+  }
+}
+
+@media (min-width:991px) and (max-width: 1200px) {
+  .nft-text{
+    width: 40.4677%;
+  }
+  nav{
+    margin-top:25px;
+  } 
+  
+  .nav-links a{
+    padding-right: 25px;
+  }
+
+  .search_box input{
+    padding: 14px;
+  }
+
+  .search_box button{
+    padding: 14px 80px;
+  }
+
+  .hero{
+    padding-top: 85px;
+  }
+
+  .hero-text h1{
+    font-size: 36px;
+  }
 }

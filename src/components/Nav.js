@@ -1,31 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavLogo from '../assets/navlogo.svg';
-// import Modal from './Modal';
+import BModal from './BModal';
 
 const Nav = () => {
-  // const [showModal, setShowModal] = useState(false);
+
+  const [showModal, setShowModal] = useState(false);
+ 
+  const handleShow = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
 
   return (
-    <header>
+    <>
     <nav>
+      <div className='logo-menu'>
         <div className='nav-logo'>
-          <img src={NavLogo} alt='nav-logo' />
-        </div>
+            <img src={NavLogo} alt='nav-logo' />
+          </div>
+        <a href='/' className='mobile_menu'>
+          <span className='bars'></span>
+          <span className='bars'></span>
+          <span className='bars'></span>
+        </a>
+      </div>
+      
         <ul className='nav-links'>
             <li><a href='/'>Home</a></li>
             <li><a href='/place_to_stay'>Place to stay</a></li>
             <li><a href='/'>NFTs</a></li>
             <li><a href='/'>Community</a></li>
         </ul>
-        <button   id='connect__wallet'>Connect wallet</button>
+        <button onClick={handleShow} id='connect__wallet'>Connect wallet</button>
     </nav>
-    <div className='mobile_menu'>
-      <span className='bars'></span>
-      <span className='bars'></span>
-      <span className='bars'></span>
-    </div>
-    {/* <Modal show={showModal} onClick={() => setShowModal(false)} /> */}
-    </header>
+    
+    <BModal show={showModal} onHide={handleClose} /> 
+    </>
   )
 }
 

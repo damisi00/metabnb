@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
-// import Modal from './components/Modal';
 import Nav from './components/Nav';
 import PlaceToStay from './pages/PlaceToStay';
 import Home from './pages/Home';

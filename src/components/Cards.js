@@ -100,7 +100,7 @@ const Cards = () => {
                 <p>2345km away</p>
                 <p>available for 2weeks stay</p>
             </div>
-            <img src={Stars} alt='rating' />
+            <img src={Stars} alt='rating' className='rating'/>
         </div>
         )}
     </section>
