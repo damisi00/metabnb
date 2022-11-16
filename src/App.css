@@ -10,7 +10,7 @@
 body{
   font-family: 'Red Rose', cursive;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #434343;
 }
 
@@ -32,12 +32,8 @@ nav, .card-wrapper{
 }
 
 nav{
-  margin: 43px auto 0;
+  margin: 2.6875rem auto 0;
   justify-content: space-between;
-}
-
-.mobile_menu{
-  display:none;
 }
 
 nav, .nav-links{
@@ -47,7 +43,7 @@ nav, .nav-links{
 
 .nav-logo{
   /* width: 18.79%; */
-  width: 233px;
+  width: 14.5625rem;
 }
 
 .nav-logo img, .ft-logo{
@@ -57,7 +53,7 @@ nav, .nav-links{
 
 .nav-links a{
   color: #434343;
-  padding-right: 48px;
+  padding-right:3rem;
 }
 
 a{
@@ -78,12 +74,16 @@ button, #connect__wallet{
 
 #connect__wallet{
   border-radius: 10px;
-  padding: 15px 27px;
+  padding: 0.9375rem 1.6875rem;
 }
 
 #connect__wallet, .search_box button{
   color: white;
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+}
+
+#hide-this{
+  display: none;
 }
 
 /* _________________ NAV  END _________________________*/
@@ -92,7 +92,7 @@ button, #connect__wallet{
 
 .hero{
   width: 84.792%;
-  padding:125px 0 67px 0;
+  padding:7.8125rem 0 4.1875rem 0;
   margin: 0 auto;
 }
 
@@ -106,7 +106,7 @@ button, #connect__wallet{
 }
 
 .hero-text h1{
-  font-size: 56px;
+  font-size: 3.5rem;
   letter-spacing: -0.02em;
 }
 
@@ -116,10 +116,10 @@ button, #connect__wallet{
 }
 
 .hero-text p{
-  font-size: 24px;
-  padding: 48px 0;
-  line-height: 35px;
-  width: 636px;
+  font-size: 1.5rem;
+  padding: 3rem 0;
+  /* line-height: 35px; */
+  width: 39.75rem;
 }
 
 .search_box{
@@ -129,22 +129,22 @@ button, #connect__wallet{
 
 .search_box ::placeholder{
   color: #b8b8b8;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: 'Red Rose', cursive;
 }
 
 .search_box input{
-  padding: 18.92px 0 20.08px 15px;
+  padding: 1.1825rem 0 1.255rem 0.9375rem;
   outline: none;
   border: 1px solid #a3a3a3;
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 0.5rem 0px 0px 0.5rem;
   width: 62.78%;
 }
 
 .search_box button{
-  border-radius: 0px 8px 8px 0px;
-  padding: 17px 87px;
-  margin-left: 0.08px;
+  border-radius: 0px .5rem .5rem 0px;
+  padding: 1.0625rem 5.4375rem;
+  margin-left: 0.005rem;
 }
 
 .hero_imgs{
@@ -155,30 +155,30 @@ button, #connect__wallet{
   'a d'
   'c d'
   'c .';
-  gap: 8px;
-  width: 476px;
-  margin-left: 99px;
+  gap: .5rem;
+  width: 29.75rem;
+  margin-left: 6.1875rem;
 }
 
-.h1{
+.side-h1{
   grid-area: a;
 }
 
-.h2{
+.side-h2{
   grid-area: b;
 }
 
-.h3{
+.side-h3{
   grid-area: c;
 }
 
-.h4{
+.side-h4{
   grid-area: d;
 }
 
 .market-brands{
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
-  padding: 10px 9.6368%;
+  padding: 0.625rem 9.6368%;
   justify-content: space-between;
   /* width:80.726%; */
 }
@@ -187,8 +187,8 @@ button, #connect__wallet{
 .inspiration h2{
   color: #000;
   font-weight: 700;
-  font-size: 48px;
-  margin: 39px 0 43px;
+  font-size: 3rem;
+  margin: 2.4375rem 0 2.6875rem;
   text-align: center;
 }
 
@@ -198,21 +198,21 @@ button, #connect__wallet{
 }
 
 .rating{
-  width: 100px;
+  width: 5.75rem;
 }
 
 .card-wrapper{
   display: grid;
-  gap: 24px;
-  margin: 0 auto 53px;
+  gap: 1.5rem;
+  margin: 0 auto 3.3125rem;
   grid-template-columns: auto auto auto auto;
 }
 
 .card{
-  border: solid 1px #d7d7d7;
-  border-radius: 15px;
+  border: 1px solid #d7d7d7;
+  border-radius: 0.9375rem;
   background: linear-gradient(124.4deg, #fff 10.8%, #fff 87.34%);
-  font-size: 12px;
+  font-size: 0.75rem;
   padding: 1rem;
 }
 
@@ -226,12 +226,12 @@ button, #connect__wallet{
 }
 
 .card-description, .distance{
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .card h6{
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .additional-info{
@@ -244,7 +244,7 @@ button, #connect__wallet{
 
 .fourth{
   width:100%;
-  padding: 100px 0;
+  padding: 6.25rem 0;
   border: 1px solid #000;
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
 }
@@ -256,22 +256,22 @@ button, #connect__wallet{
 }
 
 .nft-text h2{
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 35px;
 }
 
 .nft-text p{
   font-size: 18px;
-  padding-bottom: 57.55px;
-  line-height: 35px;
+  padding-bottom: 3.596875rem;
+  line-height: 2.1875rem;
 }
 
 .nft-text #learn_more{
-  padding:14px 33px;
+  padding:0.875rem 2.0625rem;
   color: #a02278;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: .5rem;
 }
 
 .nft-img{
@@ -282,7 +282,7 @@ button, #connect__wallet{
 
 footer{
   background-color: #1d1d1e;
-  padding: 63px 0 0 113px;
+  padding: 3.9375rem 0 0 7.0625rem;
 }
 
 .ft-wrapper{
@@ -293,12 +293,12 @@ footer{
 }
 
 .socials img{
-  margin-right: 32px;
+  margin-right: 2rem;
   cursor: pointer;
 }
 
 .ft-logo{
-  padding-bottom: 96px;
+  padding-bottom:6rem;
 }
 
 .ft-links{
@@ -311,17 +311,17 @@ footer{
 
 .ft-links ul{
   color: #fff;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 
 .ft-links li{
-  margin: 16px 0;
+  margin: 1rem 0;
 }
 
 .ft-links li a{
   color: #f1f3f9;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: normal;
 }
 
@@ -331,9 +331,9 @@ footer{
 
 footer p{
   color: #f7f7f7;
-  font-size: 16px;
-  padding-bottom: 37px;
-  margin-top: 35px;
+  font-size: 1rem;
+  padding-bottom: 2.3125rem;
+  margin-top: 2.1875rem;
 }
 
 /* _________________ FOOTER  END _________________________*/
@@ -369,17 +369,17 @@ div.fade.in.modal{
 
 .modal-header{
   border-bottom: 1px solid #cfd8dc;
-  padding: 24px 32px;
+  padding: 1.5rem 2rem;
 }
 
 .modal-header h4{
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .modal-header a{
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   color: #1a1a1a;
 }
 
@@ -388,7 +388,7 @@ div.fade.in.modal{
 }
 
 .modal-body{
-  padding: 32px;
+  padding: 2rem;
 }
 
 .modal-body h6{
@@ -400,7 +400,7 @@ div.fade.in.modal{
 .wallet-btn{
   border: 1px solid #cfd8dc;
   border-radius: 12px;
-  padding: 12px 24px 12px 20px;
+  padding: 0.75rem 1.5rem 0.75rem 1.25rem;
   background-color: transparent;
   margin-top: 1rem;
 }
@@ -415,14 +415,14 @@ div.fade.in.modal{
 }
 
 .wallet_link img{
-  width: 44px;
-  height: 44px;
+  width: 2.75rem;
+  height: 2.75rem;
 }
 
 .wallet_link span{
   color: #000;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   padding-left: 1rem;
 }
 
@@ -437,7 +437,7 @@ div.fade.in.modal{
 .cat-locat{
   width: 81.736%;
   padding-left: 6.94%;
-  margin: 115px 0 64px;
+  margin: 7.1875rem 0 4rem;
 }
 
 .cat-locat, .category, .location{
@@ -451,9 +451,8 @@ div.fade.in.modal{
 }
 
 .category a{
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #434343;
-  padding: 2px;
 }
 
 .location span{
@@ -461,20 +460,24 @@ div.fade.in.modal{
 }
 
 .location a{
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .location{
-  padding: 12px;
-  border-radius: 8px;
+  padding: .75rem;
+  border-radius: .5rem;
   border: 1px solid #b4b4b4;
   width: 14.037%;
 }
 
 /*Tablet */
 
-@media (max-width: 991px){
+@media (max-width: 769px){
+  .location{
+    width:161px;
+  }
+
   .logo-menu{
     display:flex;
     justify-content: space-between;
@@ -487,8 +490,8 @@ div.fade.in.modal{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width:30px;
-    height: 30px;
+    width:1.875rem;
+    height: 1.5675rem;
 
   }
 
@@ -511,9 +514,14 @@ div.fade.in.modal{
   }
 
   nav{
-    margin: 0;
+    /* margin: 0;
     flex-direction: column;
-    width: auto;
+    width: auto; */
+    display: none;
+  }
+
+  #hide-this{
+    display: block;
   }
 
   .nav-links, .hero{
@@ -645,9 +653,9 @@ div.fade.in.modal{
 
 /* Mobile */
 @media (max-width: 481px){
-  .logo-menu{
+  /* .logo-menu{
     width: 100%;
-  }
+  } */
   .card-wrapper{
     grid-template-columns: auto;
   }
@@ -719,31 +727,3 @@ div.fade.in.modal{
   }
 }
 
-@media (min-width:991px) and (max-width: 1200px) {
-  .nft-text{
-    width: 40.4677%;
-  }
-  nav{
-    margin-top:25px;
-  } 
-  
-  .nav-links a{
-    padding-right: 25px;
-  }
-
-  .search_box input{
-    padding: 14px;
-  }
-
-  .search_box button{
-    padding: 14px 80px;
-  }
-
-  .hero{
-    padding-top: 85px;
-  }
-
-  .hero-text h1{
-    font-size: 36px;
-  }
-}

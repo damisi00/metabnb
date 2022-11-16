@@ -22,10 +22,10 @@ const Home = () => {
             </form>
         </div>
         <div className='hero_imgs'>
-            <img src={HeroImg1} alt='nft' className='h1'/>
-            <img src={HeroImg2} alt='nft' className='h2'/>
-            <img src={HeroImg3} alt='nft' className='h3'/>
-            <img src={HeroImg4} alt='nft' className='h4'/>
+            <img src={HeroImg1} alt='nft' className='side-h1'/>
+            <img src={HeroImg2} alt='nft' className='side-h2'/>
+            <img src={HeroImg3} alt='nft' className='side-h3'/>
+            <img src={HeroImg4} alt='nft' className='side-h4'/>
         </div>
     </section>
     <section className='market-brands'>

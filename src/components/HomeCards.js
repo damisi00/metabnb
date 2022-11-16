@@ -1,12 +1,12 @@
 import React from 'react'
-import Img1 from '../assets/img5.svg';
-import Img2 from '../assets/img6.svg';
-import Img3 from '../assets/img7.svg';
-import Img4 from '../assets/img8.svg';
-import Img5 from '../assets/img1.svg';
-import Img6 from '../assets/img2.svg';
-import Img7 from '../assets/img3.svg';
-import Img8 from '../assets/img4.svg';
+import Img1 from '../assets/img5.jpg';
+import Img2 from '../assets/img6.jpg';
+import Img3 from '../assets/img7.jpg';
+import Img4 from '../assets/img8.jpg';
+import Img5 from '../assets/img1.jpg';
+import Img6 from '../assets/img2.jpg';
+import Img7 from '../assets/img3.jpg';
+import Img8 from '../assets/img4.jpg';
 import Stars from '../assets/stars.svg';
 
 const cardImages = [
@@ -26,22 +26,22 @@ const cardImages = [
         no: 4,
         title: Img4
     },
-    {
-        no: 5,
-        title: Img5
-    },
-    {
-        no: 6,
-        title: Img6
-    },
-    {
-        no: 7,
-        title: Img7
-    },
-    {
-        no: 8,
-        title: Img8
-    }
+   {
+       no: 5,
+       title: Img5
+   },
+   {
+       no: 6,
+       title: Img6
+   },
+   {
+       no: 7,
+       title: Img7
+   },
+   {
+       no: 8,
+       title: Img8
+   }
 ]
 
 const HomeCards = () => {
