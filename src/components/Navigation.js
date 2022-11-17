@@ -33,7 +33,7 @@ const Navigation = () => {
     {/* Mobile/tab menu */}
     <Navbar collapseOnSelect expand="lg"  id='hide-this'>
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="home">
         <img src={NavLogo} alt='nav-logo' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" className='mobile_menu'>
@@ -43,11 +43,13 @@ const Navigation = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#place_to_stay">Place to stay</Nav.Link>
-            <Nav.Link href="#">NFTs</Nav.Link>
-            <Nav.Link href="#">Community</Nav.Link>
-            <button onClick={handleShow} id='connect__wallet'>Connect wallet</button>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="place_to_stay">Place to stay</Nav.Link>
+            <Nav.Link href="/">NFTs</Nav.Link>
+            <Nav.Link href="/">Community</Nav.Link>
+            <Nav.Link href="/" onClick={handleShow} id='connect__wallet'>
+              Connect wallet
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

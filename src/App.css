@@ -22,13 +22,22 @@ ul{
   margin-left:0;
   padding-left: 0;
 }
- p{
+
+.container{
+  max-width: 100%;
+}
+
+p{
    margin-bottom: 0;
- }
+}
 
 /* NAVBAR STYLES */
-nav, .card-wrapper{
+nav, .card-wrapper, .inspiration h2{
   width: 86.111%;
+}
+
+.inspiration h2{
+  margin:  0 auto;
 }
 
 nav{
@@ -57,6 +66,20 @@ nav, .nav-links{
   padding-right:3rem;
 }
 
+.bars:first-of-type, .bars:last-of-type{
+  width: 70%;
+}
+
+.bars:last-of-type{
+  align-self: flex-end;
+}
+
+.bars{
+  height:3px;
+  width:2.1875rem;
+  background: linear-gradient(90deg, #070507 11.45%, #a02279 11.45%);
+}
+
 a{
   text-decoration: none;
 }
@@ -76,6 +99,7 @@ button, #connect__wallet{
 #connect__wallet{
   border-radius: 10px;
   padding: 0.9375rem 1.6875rem;
+  width: max-content;
 }
 
 #connect__wallet, .search_box button{
@@ -85,11 +109,16 @@ button, #connect__wallet{
 
 #hide-this{
   display: none;
+  padding-inline:0 !important;
 }
 
 .navbar-toggler{
   padding: 0;
   border: none;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
 }
 
 /* _________________ NAV  END _________________________*/
@@ -149,8 +178,8 @@ button, #connect__wallet{
 
 .search_box button{
   border-radius: 0px .5rem .5rem 0px;
-  padding: 1.0625rem 5.4375rem;
-  margin-left: 0.005rem;
+  padding: 1.0625rem ;
+  width: 37.22%;
 }
 
 .hero_imgs{
@@ -477,9 +506,30 @@ div.fade.in.modal{
   width: 14.037%;
 }
 
-/*Tablet */
+.mobile_menu{
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width:1.875rem;
+  height: 1.5675rem;
+
+}
+/*------------------------------Tablet -----------------------------------------*/
 
 @media (max-width: 769px){
+  .search_box input{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .search_box button{
+    padding: 0.525rem;
+  }
+  
+  .mobile_menu{
+    display: flex;
+  }
+
   .location{
     width:161px;
   }
@@ -492,37 +542,14 @@ div.fade.in.modal{
     align-items: center;
   }
 
-  .mobile_menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width:1.875rem;
-    height: 1.5675rem;
-
-  }
 
   .category{
     flex-wrap: wrap;
-  }
+    gap: 1rem;
 
-  .bars:first-of-type, .bars:last-of-type{
-    width: 65%;
-  }
-
-  .bars:last-of-type{
-    align-self: flex-end;
-  }
-
-  .bars{
-    height:3px;
-    width:35px;
-    background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
   }
 
   nav{
-    /* margin: 0;
-    flex-direction: column;
-    width: auto; */
     display: none;
   }
 
@@ -537,10 +564,6 @@ div.fade.in.modal{
   .nav-links{
     align-self: center;
     display:none;
-  }
-
-  #connect__wallet{
-    display: none;
   }
 
   .nav-links a{
@@ -562,12 +585,9 @@ div.fade.in.modal{
 
   .hero-text h1{
     font-size: 36px;
-    padding:0 1rem;
+    padding:0;
   }
 
-  .inspiration h2, .nft-text h2{
-    font-size: 28px;
-  }
 
   .nft-img{
     margin-bottom: 25px;
@@ -583,7 +603,7 @@ div.fade.in.modal{
 
   .hero-text, .nft-text{
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .search_box{
@@ -591,7 +611,7 @@ div.fade.in.modal{
   }
 
   .nft-text p{
-   padding-bottom: 30px; 
+   padding-bottom: 1.125rem; 
   }
 
   .hero_imgs, .nft-img{
@@ -634,19 +654,14 @@ div.fade.in.modal{
   }
 
   .fourth{
-    padding: 35px 0px;
+    padding: 2.1875rem 0px 6.1875rem;
   }
 
-  .market-brands img, .nav-logo{
-    width: 150px;
+  .market-brands img{
+    width: 9.375rem;
   }
   .search_box input{
     margin:auto;
-    padding: 15px;
-  }
-
-  .search_box button{
-    padding: 12px 70px;
   }
 
   .cat-locat{
@@ -654,14 +669,18 @@ div.fade.in.modal{
     margin: 64px 0;
     flex-direction: column;
   }
+
+  .location{
+    margin-top: .5rem;
+  }
 }
 /* ____________________ END OF TAB _________________________________ */
 
 /* Mobile */
 @media (max-width: 481px){
-  /* .logo-menu{
-    width: 100%;
-  } */
+  .navbar-brand{
+    width: 50%;
+  }
   .card-wrapper{
     grid-template-columns: auto;
   }
@@ -682,28 +701,31 @@ div.fade.in.modal{
     padding-right: 1rem;
   }
   .hero-text h1{
-    font-size: 28px;
+    /* font-size: 28px; */
   }
 
   .hero-text p{
     line-height: normal;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .market-brands{
     padding: 1rem;
   }
 
+  .market-brands img{
+    width: 100px;
+  }
+  .nft-text #learn_more{
+    padding: 13px 30px;
+  }
+
   .search_box input{
-    padding: 15px;
+    padding: .5rem ;
   }
 
   .search_box button{
-    padding: 12px 40px;
-  }
-
-  .nft-text #learn_more{
-    padding: 13px 30px;
+    padding: 5px;
   }
 
   footer p, .ft-links ul{
@@ -733,3 +755,111 @@ div.fade.in.modal{
   }
 }
 
+@media (min-width:769px) and (max-width: 1024px){
+  .location{
+    width:161px;
+  }
+
+  .category{
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .category a{
+    /* margin-right: 1rem; */
+  }
+
+  .location{
+    margin-top: .5rem;
+  }
+
+  nav{
+    display: none;
+  }
+
+  .mobile_menu{
+    display: flex;
+  }
+
+  .card-wrapper{
+    grid-template-columns: auto auto;
+  }
+
+  #hide-this{
+    display: block;
+    padding-top: 1.5rem;
+  }
+
+  footer{
+    padding-inline: 2rem;
+    margin: 0 auto;
+  }
+
+  .market-brands img{
+    width: 7rem;
+  }
+
+  .hero-text p{
+    font-size: 1.25rem;
+  }
+
+  .cat-locat{
+    margin: 4rem 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .hero-text h1{
+    font-size: 2.5rem;
+  }
+
+  .inspiration h2, .nft-text h2{
+    font-size: 2rem;
+  }
+
+  .nft-text p{
+    line-height: normal;
+  }
+
+  .search_box input{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .search_box button{
+    padding: 0.525rem;
+  }
+
+  .hero{
+    padding:4.8125rem 0 3.1875rem 0;
+    flex-direction: column;
+  }
+
+  .hero-text{
+    width: 100%;
+    padding-bottom: 1.5rem;
+  }
+
+  .hero_imgs{
+    margin-left: 0;
+    width: auto;
+  }
+}
+
+/* ________________________________________LARGER DESKTOP__________________________ */
+
+@media (min-width:1441px){
+  .hero, .additional-info{
+    justify-content: center;
+  }
+
+  .hero-text h1, .hero-text p{
+    width: 85%;
+  }
+
+  .nft-img{
+    width: max-content;
+  }
+}
