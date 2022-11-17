@@ -47,7 +47,7 @@ const Navigation = () => {
             <Nav.Link href="place_to_stay">Place to stay</Nav.Link>
             <Nav.Link href="/">NFTs</Nav.Link>
             <Nav.Link href="/">Community</Nav.Link>
-            <Nav.Link href="/" onClick={handleShow} id='connect__wallet'>
+            <Nav.Link href=" " onClick={handleShow} id='connect__wallet'>
               Connect wallet
             </Nav.Link>
           </Nav>
