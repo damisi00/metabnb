@@ -470,9 +470,9 @@ div.fade.in.modal{
 /* FilterBy Buttons/Link */
 
 .cat-locat{
-  width: 81.736%;
-  padding-left: 6.94%;
-  margin: 7.1875rem 0 4rem;
+  width: 86.111%;
+  padding-left: 0;
+  margin: 7.1875rem auto 4rem;
 }
 
 .cat-locat, .category, .location{
@@ -482,7 +482,7 @@ div.fade.in.modal{
 }
 
 .category{
-  width: 80.296%;
+  width: 80.296%;  
 }
 
 .category a{
@@ -503,7 +503,7 @@ div.fade.in.modal{
   padding: .75rem;
   border-radius: .5rem;
   border: 1px solid #b4b4b4;
-  width: 14.037%;
+  width: 10rem;
 }
 
 .mobile_menu{
@@ -525,7 +525,7 @@ div.fade.in.modal{
   .search_box button{
     padding: 0.525rem;
   }
-  
+
   .mobile_menu{
     display: flex;
   }
@@ -700,9 +700,6 @@ div.fade.in.modal{
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  .hero-text h1{
-    /* font-size: 28px; */
-  }
 
   .hero-text p{
     line-height: normal;
@@ -755,7 +752,7 @@ div.fade.in.modal{
   }
 }
 
-@media (min-width:769px) and (max-width: 1024px){
+@media (min-width:769px) and (max-width: 1025px){
   .location{
     width:161px;
   }
@@ -765,10 +762,6 @@ div.fade.in.modal{
     gap: 1rem;
     align-items: flex-start;
     height: auto;
-  }
-
-  .category a{
-    /* margin-right: 1rem; */
   }
 
   .location{
@@ -862,4 +855,17 @@ div.fade.in.modal{
   .nft-img{
     width: max-content;
   }
+
+  .cat-locat{
+    width:86.111%;
+    margin-inline: auto;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .category a{
+    padding-right: 48px;
+  }
+
+
 }
